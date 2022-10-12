@@ -14,7 +14,7 @@
   },
   "models": [
     {
-      "name": "bigquery.gsod",
+      "name": "bigquery.gsod_v2",
       "connection_constant": "CONNECTION_NAME"
     }
   ]

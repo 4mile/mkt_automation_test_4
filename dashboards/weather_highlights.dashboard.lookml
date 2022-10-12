@@ -5,7 +5,7 @@
   elements:
   - title: Hottest Temperatures (Top 100)
     name: Hottest Temperatures (Top 100)
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: looker_map
     fields: [stations.location, gsod.count]
@@ -73,7 +73,7 @@
     height: 10
   - title: Coldest Temperatures (Top 100)
     name: Coldest Temperatures (Top 100)
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: looker_map
     fields: [stations.location, gsod.min_temperature]
@@ -140,7 +140,7 @@
     height: 10
   - title: Thunder
     name: Thunder
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: looker_map
     fields: [stations.location, gsod.count]
@@ -207,7 +207,7 @@
     height: 10
   - title: Tornados
     name: Tornados
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: looker_map
     fields: [stations.location, gsod.count]

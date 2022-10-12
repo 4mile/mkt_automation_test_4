@@ -5,7 +5,7 @@
   elements:
   - title: Days w/ Rainfall
     name: Days w/ Rainfall
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: looker_map
     fields: [gsod.total_days_with_rainfall, stations.state]
@@ -70,7 +70,7 @@
     height: 12
   - title: Temperature Distribution
     name: Temperature Distribution
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: looker_boxplot
     fields: [gsod.min_temperature, gsod.percentile_25_temperature, gsod.median_temperature,
@@ -143,7 +143,7 @@
     height: 8
   - title: Days with Tornado
     name: Days with Tornado
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: single_value
     fields: [gsod.weather_month, gsod.total_days_with_thunder]
@@ -225,7 +225,7 @@
     height: 4
   - title: Days with Thunder
     name: Days with Thunder
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: single_value
     fields: [gsod.total_days_with_thunder, gsod.weather_month]
@@ -303,7 +303,7 @@
     height: 4
   - title: Days with Hail
     name: Days with Hail
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: single_value
     fields: [gsod.total_days_with_hail, gsod.weather_month]
@@ -411,7 +411,7 @@
     height: 3
   - title: Daily Precipitation (Total Inches)
     name: Daily Precipitation (Total Inches)
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: looker_area
     fields: [gsod.weather_date, gsod.total_rainfall, gsod.total_snow_inches]
@@ -470,7 +470,7 @@
     height: 7
   - title: Daily High/Low
     name: Daily High/Low
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: looker_column
     fields: [gsod.weather_date, gsod.min_temperature, gsod.max_temperature, gsod.average_temperature]
@@ -528,7 +528,7 @@
     height: 8
   - title: Days with Snow
     name: Days with Snow
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: single_value
     fields: [gsod.weather_month, gsod.total_days_with_snow]
@@ -609,7 +609,7 @@
     height: 4
   - title: Days w/ Snow
     name: Days w/ Snow
-    model: bigquery.gsod
+    model: bigquery.gsod_v2
     explore: gsod
     type: looker_map
     fields: [stations.state, gsod.total_days_with_snow]
